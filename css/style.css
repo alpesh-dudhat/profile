@@ -5,9 +5,11 @@
 **********************************************/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("bootstrap.min.css");
+
 body {
   background-color: #f2f2f2;
-  color: #131313; }
+  color: #131313;
+}
 
 *,
 html,
@@ -16,24 +18,32 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  outline: 0; }
+  outline: 0;
+}
 
 p {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 ul,
 li {
   list-style: none;
   padding: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 a {
-  color: #131313; }
-  a:focus {
-    text-decoration: none; }
-  a:hover {
-    color: #ff9e31;
-    text-decoration: none; }
+  color: #131313;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff9e31;
+  text-decoration: none;
+}
 
 @font-face {
   font-family: 'icomoon';
@@ -41,7 +51,8 @@ a {
   src: url("fonts/icomoon.eot?1oexdk#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?1oexdk") format("truetype"), url("fonts/icomoon.woff?1oexdk") format("woff"), url("fonts/icomoon.svg?1oexdk#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: block; }
+  font-display: block;
+}
 
 [class^="icon-"],
 [class*=" icon-"] {
@@ -55,212 +66,318 @@ a {
   line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .icon-home:before {
-  content: "\e900"; }
+  content: "\e900";
+}
 
 .icon-book:before {
-  content: "\e91f"; }
+  content: "\e91f";
+}
 
 .icon-stack:before {
-  content: "\e92e"; }
+  content: "\e92e";
+}
 
 .icon-compass:before {
-  content: "\e949"; }
+  content: "\e949";
+}
 
 .icon-history:before {
-  content: "\e94d"; }
+  content: "\e94d";
+}
 
 .icon-user-tie:before {
-  content: "\e976"; }
+  content: "\e976";
+}
 
 .icon-wrench:before {
-  content: "\e991"; }
+  content: "\e991";
+}
 
 .icon-cog:before {
-  content: "\e994"; }
+  content: "\e994";
+}
 
 .icon-dribbble:before {
-  content: "\eaa7"; }
+  content: "\eaa7";
+}
 
 .icon-behance:before {
-  content: "\eaa8"; }
+  content: "\eaa8";
+}
 
 .icon-github:before {
-  content: "\eab0"; }
+  content: "\eab0";
+}
 
 .icon-linkedin2:before {
-  content: "\eaca"; }
+  content: "\eaca";
+}
 
 .icon-stackoverflow:before {
-  content: "\ead0"; }
+  content: "\ead0";
+}
 
 .icon-codepen:before {
-  content: "\eae8"; }
+  content: "\eae8";
+}
 
 header {
   position: relative;
   max-height: 350px;
   min-height: 220px;
   margin: 0px auto;
-  background-color: #131313; }
+  background-color: #131313;
+}
 
 .main {
   margin-top: -130px;
-  margin-bottom: 15px; }
-  .main .container {
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.5);
-    padding-bottom: 15px; }
-  .main .profile-img {
-    border-radius: 10px; }
+  margin-bottom: 15px;
+}
+
+.main .container {
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.5);
+  padding-bottom: 15px;
+}
+
+.main .profile-img {
+  border-radius: 10px;
+}
+
+.main .top-title {
+  margin-top: 80px;
+  padding-bottom: 8px;
+}
+
+@media screen and (max-width: 767px) {
   .main .top-title {
-    margin-top: 80px;
-    padding-bottom: 8px; }
-    @media screen and (max-width: 767px) {
-      .main .top-title {
-        margin-top: 40px;
-        flex-direction: column; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      .main .top-title {
-        margin-top: 40px; } }
-    .main .top-title h1 {
-      color: white;
-      font-weight: 700;
-      mix-blend-mode: difference;
-      margin-bottom: 0px; }
-      @media screen and (max-width: 767px) {
-        .main .top-title h1 {
-          font-size: 22px; } }
-    .main .top-title .soical li a {
-      display: block;
-      border-radius: 100px;
-      cursor: pointer;
-      width: 35px;
-      height: 35px;
-      line-height: 35px;
-      text-align: center; }
-      .main .top-title .soical li a:hover span {
-        color: #fff; }
-      .main .top-title .soical li a span {
-        color: #8b8b8b; }
-    .main .top-title .soical li + a {
-      margin-right: 5px; }
-  .main .sub {
-    margin-top: 10px; }
-    .main .sub h2.sub-title {
-      font-weight: 500;
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      line-height: 1.5;
-      color: #8b8b8b;
-      mix-blend-mode: difference; }
-    .main .sub .badge {
-      padding: 1em 1.5em;
-      font-weight: 600;
-      margin-bottom: 5px;
-      background: #fff;
-      color: #131313;
-      border: 1px solid #dfe3e9;
-      cursor: pointer; }
-      .main .sub .badge:hover {
-        background: #ff9e31;
-        color: #fff; }
-  .main p.text {
-    font-size: 14px;
-    font-weight: 600; }
-  .main .history h2 {
-    font-size: 24px;
-    font-weight: 400; }
-    .main .history h2 span {
-      color: #cdcdcd;
-      font-size: 18px; }
-  .main .history .exp {
-    margin-bottom: 16px;
-    position: relative; }
-    .main .history .exp:hover a {
-      color: #ff9e31; }
-    .main .history .exp:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 7px;
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: #8f96a3; }
-    .main .history .exp::after {
-      content: "";
-      position: absolute;
-      left: 4px;
-      top: 25px;
-      bottom: 0;
-      border-left: 1px dashed #8f96a3; }
-    .main .history .exp h3 {
-      line-height: 24px;
-      font-size: 17px;
-      color: #131313;
-      margin-bottom: 0; }
-    .main .history .exp a {
-      color: #8b8b8b;
-      font-size: 12px;
-      margin-bottom: 10px;
-      display: block; }
-    .main .history .exp ul {
-      padding-left: 20px; }
-      .main .history .exp ul li {
-        list-style: disc;
-        margin-bottom: 8px;
-        padding: 0 0 0 24px; }
-    .main .history .exp .tech {
-      color: #8b8b8b;
-      font-size: 13px; }
-  .main .experience h2 {
-    font-size: 24px;
-    font-weight: 400; }
-    .main .experience h2 span {
-      color: #cdcdcd;
-      font-size: 18px; }
-  .main .experience .exp h3 {
-    line-height: 24px;
-    font-size: 17px;
-    color: #131313;
-    margin-bottom: 10px; }
-  .main .experience .exp p {
-    margin-bottom: 15px;
-    color: #8b8b8b; }
-  .main .experience .exp:hover a {
-    color: #ff9e31; }
-  .main .skills h2 {
-    font-size: 24px;
-    font-weight: 400; }
-    .main .skills h2 span {
-      color: #cdcdcd;
-      font-size: 18px; }
-  .main .skills .exp h3 {
-    line-height: 24px;
-    font-size: 17px;
-    color: #131313;
-    margin-bottom: 10px; }
-  .main .skills .exp p {
-    margin-bottom: 15px;
-    color: #8b8b8b; }
-  .main .skills .exp:hover a {
-    color: #ff9e31; }
-  .main .education h2 {
-    font-size: 24px;
-    font-weight: 400; }
-    .main .education h2 span {
-      color: #cdcdcd;
-      font-size: 18px; }
-  .main .education .exp h3 {
-    line-height: 24px;
-    font-size: 17px;
-    color: #131313;
-    margin-bottom: 10px; }
-  .main .education .exp p {
-    margin-bottom: 15px;
-    color: #8b8b8b; }
-  .main .education .exp:hover a {
-    color: #ff9e31; }
+    margin-top: 40px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main .top-title {
+    margin-top: 40px;
+  }
+}
+
+.main .top-title h1 {
+  color: white;
+  font-weight: 700;
+  mix-blend-mode: difference;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .main .top-title h1 {
+    font-size: 22px;
+  }
+}
+
+.main .top-title .soical li a {
+  display: block;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.main .top-title .soical li a:hover span {
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+.main .top-title .soical li a span {
+  color: #8b8b8b;
+  mix-blend-mode: difference;
+}
+
+.main .top-title .soical li+a {
+  margin-right: 5px;
+}
+
+.main .sub {
+  margin-top: 10px;
+}
+
+.main .sub h2.sub-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #8b8b8b;
+  mix-blend-mode: difference;
+}
+
+.main .sub .badge {
+  padding: 1em 1.5em;
+  font-weight: 600;
+  margin-bottom: 5px;
+  background: #fff;
+  color: #131313;
+  border: 1px solid #dfe3e9;
+  cursor: pointer;
+}
+
+.main .sub .badge:hover {
+  background: #ff9e31;
+  color: #fff;
+}
+
+.main p.text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main .history h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.main .history h2 span {
+  color: #cdcdcd;
+  font-size: 18px;
+}
+
+.main .history .exp {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.main .history .exp:hover a {
+  color: #ff9e31;
+}
+
+.main .history .exp:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #8f96a3;
+}
+
+.main .history .exp::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 25px;
+  bottom: 0;
+  border-left: 1px dashed #8f96a3;
+}
+
+.main .history .exp h3 {
+  line-height: 24px;
+  font-size: 17px;
+  color: #131313;
+  margin-bottom: 0;
+}
+
+.main .history .exp a {
+  color: #8b8b8b;
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.main .history .exp ul {
+  padding-left: 20px;
+}
+
+.main .history .exp ul li {
+  list-style: disc;
+  margin-bottom: 8px;
+  padding: 0 0 0 24px;
+}
+
+.main .history .exp .tech {
+  color: #8b8b8b;
+  font-size: 13px;
+}
+
+.main .experience h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.main .experience h2 span {
+  color: #cdcdcd;
+  font-size: 18px;
+}
+
+.main .experience .exp h3 {
+  line-height: 24px;
+  font-size: 17px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+
+.main .experience .exp p {
+  margin-bottom: 15px;
+  color: #8b8b8b;
+}
+
+.main .experience .exp:hover a {
+  color: #ff9e31;
+}
+
+.main .skills h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.main .skills h2 span {
+  color: #cdcdcd;
+  font-size: 18px;
+}
+
+.main .skills .exp h3 {
+  line-height: 24px;
+  font-size: 17px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+
+.main .skills .exp p {
+  margin-bottom: 15px;
+  color: #8b8b8b;
+}
+
+.main .skills .exp:hover a {
+  color: #ff9e31;
+}
+
+.main .education h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.main .education h2 span {
+  color: #cdcdcd;
+  font-size: 18px;
+}
+
+.main .education .exp h3 {
+  line-height: 24px;
+  font-size: 17px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+
+.main .education .exp p {
+  margin-bottom: 15px;
+  color: #8b8b8b;
+}
+
+.main .education .exp:hover a {
+  color: #ff9e31;
+}

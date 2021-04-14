@@ -60,11 +60,13 @@ header {
 
             span {
               color: #fff;
+              mix-blend-mode: difference;
             }
           }
 
           span {
             color: $light;
+            mix-blend-mode: difference;
           }
         }
 
