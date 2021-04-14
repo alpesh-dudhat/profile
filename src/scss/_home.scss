@@ -1,0 +1,239 @@
+header {
+  position: relative;
+  max-height: 350px;
+  min-height: 220px;
+  margin: 0px auto;
+  background-color: rgb(19, 19, 19);
+}
+
+.main {
+  margin-top: -130px;
+  margin-bottom: 15px;
+
+  .container {
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.5);
+    padding-bottom: 15px;
+  }
+
+  .profile-img {
+    border-radius: 10px;
+  }
+
+  .top-title {
+    margin-top: 80px;
+    padding-bottom: 8px;
+
+    @media screen and (max-width:767px) {
+      margin-top: 40px;
+      flex-direction: column;
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+      margin-top: 40px;
+    }
+
+    h1 {
+      color: rgb(255, 255, 255);
+      font-weight: 700;
+      mix-blend-mode: difference;
+      margin-bottom: 0px;
+
+      @media screen and (max-width:767px) {
+        font-size: 22px;
+      }
+    }
+
+    .soical {
+      li {
+        a {
+          display: block;
+          border-radius: 100px;
+          cursor: pointer;
+          width: 35px;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+
+          &:hover {
+            // background: $hover;
+
+            span {
+              color: #fff;
+            }
+          }
+
+          span {
+            color: $light;
+          }
+        }
+
+        &+a {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .sub {
+    margin-top: 10px;
+
+    h2.sub-title {
+      font-weight: 500;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      line-height: 1.5;
+      color: $light;
+      mix-blend-mode: difference;
+    }
+
+    .badge {
+      padding: 1em 1.5em;
+      font-weight: 600;
+      margin-bottom: 5px;
+      background: #fff;
+      color: $black;
+      border: 1px solid #dfe3e9;
+      cursor: pointer;
+
+      &:hover {
+        background: $hover;
+        color: #fff;
+      }
+    }
+
+  }
+
+  p {
+    &.text {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  @mixin h2 {
+    font-size: 24px;
+    font-weight: 400;
+
+    span {
+      color: #cdcdcd;
+      font-size: 18px;
+    }
+  }
+
+  @mixin exp {
+    h3 {
+      line-height: 24px;
+      font-size: 17px;
+      color: $black;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: $light;
+    }
+
+    &:hover {
+      a {
+        color: $hover;
+      }
+    }
+  }
+
+  .history {
+    h2 {
+      @include h2;
+    }
+
+    .exp {
+      margin-bottom: 16px;
+      position: relative;
+
+      &:hover {
+        a {
+          color: $hover;
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 7px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #8f96a3;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 4px;
+        top: 25px;
+        bottom: 0;
+        border-left: 1px dashed #8f96a3;
+      }
+
+      h3 {
+        line-height: 24px;
+        font-size: 17px;
+        color: $black;
+        margin-bottom: 0;
+      }
+
+      a {
+        color: $light;
+        font-size: 12px;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      ul {
+        padding-left: 20px;
+
+        li {
+          list-style: disc;
+          margin-bottom: 8px;
+          padding: 0 0 0 24px;
+        }
+      }
+
+      .tech {
+        color: $light;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .experience {
+    h2 {
+      @include h2;
+    }
+
+    .exp {
+      @include exp;
+    }
+  }
+
+  .skills {
+    h2 {
+      @include h2;
+    }
+
+    .exp {
+      @include exp;
+    }
+  }
+
+  .education {
+    h2 {
+      @include h2;
+    }
+
+    .exp {
+      @include exp;
+    }
+  }
+}
