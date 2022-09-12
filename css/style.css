@@ -5,10 +5,12 @@
 **********************************************/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("bootstrap.min.css");
-
 body {
-  background-color: #f2f2f2;
-  color: #131313;
+  color: #000;
+  background-size: contain;
+  background-position: top;
+  background-color: black;
+  background-attachment: fixed;
 }
 
 *,
@@ -35,29 +37,25 @@ li {
 a {
   color: #131313;
 }
-
 a:focus {
   text-decoration: none;
 }
-
 a:hover {
-  color: #ff9e31;
   text-decoration: none;
 }
 
 @font-face {
-  font-family: 'icomoon';
+  font-family: "icomoon";
   src: url("fonts/icomoon.eot?1oexdk");
   src: url("fonts/icomoon.eot?1oexdk#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?1oexdk") format("truetype"), url("fonts/icomoon.woff?1oexdk") format("woff"), url("fonts/icomoon.svg?1oexdk#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-
-[class^="icon-"],
+[class^=icon-],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -130,55 +128,54 @@ header {
   max-height: 350px;
   min-height: 220px;
   margin: 0px auto;
-  background-color: #131313;
 }
 
 .main {
   margin-top: -130px;
   margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
-
 .main .container {
   border-radius: 10px;
   box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.5);
   padding-bottom: 15px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-
 .main .profile-img {
   border-radius: 10px;
 }
-
 .main .top-title {
-  margin-top: 80px;
+  margin-top: 40px;
   padding-bottom: 8px;
 }
-
 @media screen and (max-width: 767px) {
   .main .top-title {
     margin-top: 40px;
     flex-direction: column;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .main .top-title {
     margin-top: 40px;
   }
 }
-
 .main .top-title h1 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 700;
-  mix-blend-mode: difference;
   margin-bottom: 0px;
 }
-
+.main .top-title h1 a {
+  color: rgb(0, 0, 0);
+}
 @media screen and (max-width: 767px) {
   .main .top-title h1 {
     font-size: 22px;
   }
 }
-
 .main .top-title .soical li a {
   display: block;
   border-radius: 100px;
@@ -188,34 +185,28 @@ header {
   line-height: 35px;
   text-align: center;
 }
-
 .main .top-title .soical li a:hover span {
   color: #fff;
   mix-blend-mode: difference;
 }
-
 .main .top-title .soical li a span {
-  color: #8b8b8b;
+  color: #ffffff;
   mix-blend-mode: difference;
 }
-
-.main .top-title .soical li+a {
+.main .top-title .soical li + a {
   margin-right: 5px;
 }
-
 .main .sub {
   margin-top: 10px;
 }
-
 .main .sub h2.sub-title {
   font-weight: 500;
   font-size: 1.3rem;
   margin-bottom: 10px;
   line-height: 1.5;
-  color: #8b8b8b;
+  color: #ffffff;
   mix-blend-mode: difference;
 }
-
 .main .sub .badge {
   padding: 1em 1.5em;
   font-weight: 600;
@@ -225,36 +216,29 @@ header {
   border: 1px solid #dfe3e9;
   cursor: pointer;
 }
-
 .main .sub .badge:hover {
   background: #ff9e31;
   color: #fff;
 }
-
 .main p.text {
   font-size: 14px;
   font-weight: 600;
 }
-
 .main .history h2 {
   font-size: 24px;
   font-weight: 400;
 }
-
 .main .history h2 span {
-  color: #cdcdcd;
+  color: #000000;
   font-size: 18px;
 }
-
 .main .history .exp {
   margin-bottom: 16px;
   position: relative;
 }
-
 .main .history .exp:hover a {
-  color: #ff9e31;
+  color: #f44336;
 }
-
 .main .history .exp:before {
   content: "";
   position: absolute;
@@ -263,121 +247,95 @@ header {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: #8f96a3;
+  background: #000000;
 }
-
 .main .history .exp::after {
   content: "";
   position: absolute;
   left: 4px;
   top: 25px;
   bottom: 0;
-  border-left: 1px dashed #8f96a3;
+  border-left: 1px dashed #fff;
 }
-
 .main .history .exp h3 {
+  font-weight: 700;
   line-height: 24px;
   font-size: 17px;
-  color: #131313;
+  color: #000;
   margin-bottom: 0;
 }
-
 .main .history .exp a {
-  color: #8b8b8b;
+  color: #000;
   font-size: 12px;
   margin-bottom: 10px;
   display: block;
 }
-
 .main .history .exp ul {
   padding-left: 20px;
 }
-
 .main .history .exp ul li {
   list-style: disc;
   margin-bottom: 8px;
   padding: 0 0 0 24px;
 }
-
 .main .history .exp .tech {
-  color: #8b8b8b;
-  font-size: 13px;
+  color: #000000;
+  font-size: 14px;
 }
-
 .main .experience h2 {
   font-size: 24px;
   font-weight: 400;
 }
-
 .main .experience h2 span {
-  color: #cdcdcd;
+  color: #000000;
   font-size: 18px;
 }
-
 .main .experience .exp h3 {
   line-height: 24px;
   font-size: 17px;
   color: #131313;
   margin-bottom: 10px;
+  font-weight: 700;
 }
-
 .main .experience .exp p {
   margin-bottom: 15px;
-  color: #8b8b8b;
+  color: #000000;
 }
-
-.main .experience .exp:hover a {
-  color: #ff9e31;
-}
-
 .main .skills h2 {
   font-size: 24px;
   font-weight: 400;
 }
-
 .main .skills h2 span {
-  color: #cdcdcd;
+  color: #000000;
   font-size: 18px;
 }
-
 .main .skills .exp h3 {
   line-height: 24px;
   font-size: 17px;
   color: #131313;
   margin-bottom: 10px;
+  font-weight: 700;
 }
-
 .main .skills .exp p {
   margin-bottom: 15px;
-  color: #8b8b8b;
+  color: #000000;
 }
-
-.main .skills .exp:hover a {
-  color: #ff9e31;
-}
-
 .main .education h2 {
   font-size: 24px;
   font-weight: 400;
 }
-
 .main .education h2 span {
-  color: #cdcdcd;
+  color: #000000;
   font-size: 18px;
 }
-
 .main .education .exp h3 {
   line-height: 24px;
   font-size: 17px;
   color: #131313;
   margin-bottom: 10px;
+  font-weight: 700;
 }
-
 .main .education .exp p {
   margin-bottom: 15px;
-  color: #8b8b8b;
-}
-
-.main .education .exp:hover a {
-  color: #ff9e31;
-}
+  color: #000000;
+}/*# sourceMappingURL=style.css.map */

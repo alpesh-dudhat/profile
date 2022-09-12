@@ -5,18 +5,20 @@
 2.Reset
 **********************************************/
 
-
-$primaryfont:'Open Sans',
-sans-serif;
+$primaryfont: "Open Sans", sans-serif;
 
 // COlORS
-$black:#131313;
-$light:#8b8b8b;
-$hover:#ff9e31;
+$black: #131313;
+$light: #8b8b8b;
+$hover: #ff9e31;
 
 body {
-  background-color: rgb(242, 242, 242);
-  color: $black;
+  // background: url("../images/bg.png") no-repeat;
+  color: #000;
+  background-size: contain;
+  background-position: top;
+  background-color: black;
+  background-attachment: fixed;
 }
 
 *,
@@ -27,7 +29,6 @@ body {
   font-family: $primaryfont;
   font-size: 14px;
   outline: 0;
-
 }
 
 p {
@@ -49,25 +50,24 @@ a {
   }
 
   &:hover {
-    color: $hover;
+    // color: $hover;
     text-decoration: none;
   }
 }
 
 // CDN Fonts
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
 // Importing css
-@import url('bootstrap.min.css');
+@import url("bootstrap.min.css");
 
 @font-face {
-  font-family: 'icomoon';
-  src: url('fonts/icomoon.eot?1oexdk');
-  src: url('fonts/icomoon.eot?1oexdk#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?1oexdk') format('truetype'),
-    url('fonts/icomoon.woff?1oexdk') format('woff'),
-    url('fonts/icomoon.svg?1oexdk#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?1oexdk");
+  src: url("fonts/icomoon.eot?1oexdk#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?1oexdk") format("truetype"),
+    url("fonts/icomoon.woff?1oexdk") format("woff"),
+    url("fonts/icomoon.svg?1oexdk#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -76,7 +76,7 @@ a {
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
